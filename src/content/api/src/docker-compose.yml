@@ -9,8 +9,8 @@ services:
       - ASPNETCORE_URLS=http://+:80
       - ASPNETCORE_ENVIRONMENT=Production
     networks:
-      - Easify
+      - LittleBlocks
 
 networks:
-  Easify:
-    name: easify
+  LittleBlocks:
+    name: LittleBlocks

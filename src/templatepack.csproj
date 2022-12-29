@@ -3,13 +3,13 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageVersion>1.0.0</PackageVersion>
-    <PackageId>Easify.API</PackageId>
-    <Title>Easify Solution Template</Title>
+    <PackageId>LittleBlocks.API</PackageId>
+    <Title>LittleBlocks Solution Template</Title>
     <Authors>Mohammad Moattar</Authors>
-    <Description>Template generator for Easify framework</Description>
-    <PackageTags>dotnet-new;templates;easify</PackageTags>
+    <Description>Template generator for LittleBlocks framework</Description>
+    <PackageTags>dotnet-new;templates;LittleBlocks</PackageTags>
     <TargetFramework>net5.0</TargetFramework>
-    <RepositoryUrl>https://github.com/icgam/Easify.Templates</RepositoryUrl>
+    <RepositoryUrl>https://github.com/LittleBlocks/LittleBlocks.Templates</RepositoryUrl>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
