@@ -5,12 +5,12 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR  /src
 COPY *.sln ./
-COPY Easify.Template.WebApi/*.csproj ./Easify.Template.WebApi/
-COPY Easify.Template.WebApi.IntegrationTests/*.csproj ./Easify.Template.WebApi.IntegrationTests/
-COPY Easify.Template.Core/*.csproj ./Easify.Template.Core/
-COPY Easify.Template.Core.UnitTests/*.csproj ./Easify.Template.Core.UnitTests/
-COPY Easify.Template.Common/*.csproj ./Easify.Template.Common/
-COPY Easify.Template.Client/*.csproj ./Easify.Template.Client/
+COPY LittleBlocks.Template.WebApi/*.csproj ./LittleBlocks.Template.WebApi/
+COPY LittleBlocks.Template.WebApi.IntegrationTests/*.csproj ./LittleBlocks.Template.WebApi.IntegrationTests/
+COPY LittleBlocks.Template.Core/*.csproj ./LittleBlocks.Template.Core/
+COPY LittleBlocks.Template.Core.UnitTests/*.csproj ./LittleBlocks.Template.Core.UnitTests/
+COPY LittleBlocks.Template.Common/*.csproj ./LittleBlocks.Template.Common/
+COPY LittleBlocks.Template.Client/*.csproj ./LittleBlocks.Template.Client/
 RUN dotnet restore
 
 COPY . .
@@ -19,10 +19,10 @@ RUN dotnet build -c Release -o /app/build
 RUN dotnet test -c Release
 
 FROM build AS publish
-WORKDIR /src/Easify.Template.WebApi
+WORKDIR /src/LittleBlocks.Template.WebApi
 RUN dotnet publish -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Easify.Template.WebApi.dll"]
+ENTRYPOINT ["dotnet", "LittleBlocks.Template.WebApi.dll"]

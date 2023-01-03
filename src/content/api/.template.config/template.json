@@ -2,13 +2,13 @@
   "author": "Mohammad Moattar",
   "classifications": [
     "API",
-    "Easify"
+    "LittleBlocks"
   ],
-  "name": "Easify API Solution",
-  "identity": "Easify.Template.API",
-  "shortName": "easify-api",
+  "name": "LittleBlocks API Solution",
+  "identity": "LittleBlocks.Template.API",
+  "shortName": "LittleBlocks-api",
   "tags": {
     "language": "C#"
   },
-  "sourceName": "Easify.Template"
+  "sourceName": "LittleBlocks.Template"
 }

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Shared\Domain\" />
+    <Folder Include="Shared\Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="LittleBlocks" Version="1.0.2" />
+    <PackageReference Include="LittleBlocks.Ef" Version="1.0.0" />
+    <PackageReference Include="LittleBlocks.RestEase.Client" Version="1.0.2" />
+ </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LittleBlocks.Template.Common\LittleBlocks.Template.Common.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flache.CacheManager" Version="1.0.10" />
+    <PackageReference Include="LittleBlocks.RestEase" Version="1.0.2" />
+    <PackageReference Include="LittleBlocks.AspNetCore.Bootstrap" Version="1.0.2" />
+    <PackageReference Include="LittleBlocks.Logging.SeriLog.Loggly" Version="1.0.2" />
+    <PackageReference Include="LittleBlocks.Logging.SeriLog.Seq" Version="1.0.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LittleBlocks.Template.Core\LittleBlocks.Template.Core.csproj" />
+  </ItemGroup>
+
+</Project>
