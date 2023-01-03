@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using LittleBlocks.Template.Core.Data;
 using LittleBlocks.Template.Core.Shared.Domain;
-using EfCore.UnitOfWork;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <LangVersion>9</LangVersion>
+    <LangVersion>default</LangVersion>
+    <TargetFrameworks>net6.0;netstandard2.0;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LittleBlocks.RestEase" Version="5.0.1" />
+    <PackageReference Include="LittleBlocks.RestEase" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>
