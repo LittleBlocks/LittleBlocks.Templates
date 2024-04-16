@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <LangVersion>default</LangVersion>
   </PropertyGroup>
 
@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="11.1.0" />
-    <PackageReference Include="LittleBlocks" Version="1.0.2" />
-    <PackageReference Include="LittleBlocks.Ef" Version="1.0.0" />
-    <PackageReference Include="LittleBlocks.RestEase.Client" Version="1.0.2" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="LittleBlocks" Version="2.0.0" />
+    <PackageReference Include="LittleBlocks.Ef" Version="2.0.0" />
+    <PackageReference Include="LittleBlocks.RestEase.Client" Version="2.0.0" />
  </ItemGroup>
 
   <ItemGroup>

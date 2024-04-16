@@ -1,10 +1,8 @@
-﻿using System.Reflection;
+﻿using System;
 using LittleBlocks.Ef;
-using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using LittleBlocks.Template.Core.Data;
-using LittleBlocks.Template.Core.Shared;
 
 namespace LittleBlocks.Template.WebApi.Extensions
 {
@@ -12,7 +10,8 @@ namespace LittleBlocks.Template.WebApi.Extensions
     {
         public static IServiceCollection AddCoreServices(this IServiceCollection services)
         {
-            services.AddMediatR(typeof(HandlerBase).GetTypeInfo().Assembly);
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
+
             return services;
         }
 
