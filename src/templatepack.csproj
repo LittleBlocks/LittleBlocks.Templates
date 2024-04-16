@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>2.0.0</PackageVersion>
     <PackageId>LittleBlocks.API</PackageId>
     <Title>LittleBlocks Solution Template</Title>
     <Authors>Mohammad Moattar</Authors>
     <Description>Template generator for LittleBlocks framework</Description>
     <PackageTags>dotnet-new;templates;LittleBlocks</PackageTags>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RepositoryUrl>https://github.com/LittleBlocks/LittleBlocks.Templates</RepositoryUrl>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
